@@ -1,0 +1,43 @@
+[
+    {
+        "keywords": "an",
+        "search": "10k-100k",
+        "competition": "low",
+        "share": "-",
+        "low": "$0.02",
+        "high": "$1.11"
+   },
+   {
+        "keywords": "abc online",
+        "search": "1k-10k",
+        "competition": "low",
+        "share": "-",
+        "low": "$0.07",
+        "high": "$0.57"
+  },
+  {
+        "keywords": "the abc",
+        "search": "10-100",
+        "competition": "High",
+        "share": "-",
+        "low": "",
+        "high": ""
+},
+  {
+        "keywords": "the an",
+        "search": "10-100",
+        "competition": "Medium",
+        "share": "-",
+        "low": "",
+        "high": ""
+  },
+  {
+        "keywords": "an in",
+        "search": "10-100",
+        "competition": "Low",
+        "share": "-",
+        "low": "",
+        "high": ""
+  }
+
+]

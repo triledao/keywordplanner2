@@ -1,0 +1,42 @@
+.radio-multi.disabled {
+  cursor: not-allowed;
+}
+.radio-multi.disabled span {
+  color: #cccccc;
+  pointer-events: none;
+}
+.radio-multi.disabled span.icon-radio {
+  background-position: 0 -200px;
+}
+.radio-multi label {
+  margin-bottom: 0;
+}
+.radio-multi input[type="radio"] {
+  display: none;
+}
+.radio-multi input[type="radio"]:checked + span.icon-radio {
+  background-position: 0 -70px;
+}
+.radio-multi span {
+  font-size: 13px;
+  color: #666;
+  font-weight: normal;
+  line-height: 18px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.radio-multi span.icon-radio {
+  background-image: url(../images/icheck.png);
+  background-position: 0 -50px;
+  background-repeat: no-repeat;
+  background-size: 18px 350px;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  float: left;
+  margin-right: 5px;
+  margin-top: 2px;
+}
+.radio-multi span.active {
+  background-position: 0 -70px;
+}

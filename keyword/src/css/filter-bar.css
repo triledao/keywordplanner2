@@ -1,0 +1,21 @@
+.filter-bar {
+  margin-bottom: 12px;
+}
+.filter-bar > * {
+  float: left;
+  margin-right: 12px;
+}
+.filter-bar:before,
+.filter-bar:after {
+  display: table;
+  content: "";
+}
+.filter-bar:after {
+  clear: both;
+}
+.filter-bar .btn-green {
+  margin-right: 0;
+}
+.filter-bar .split-v {
+  padding-right: 14px;
+}

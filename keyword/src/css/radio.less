@@ -1,0 +1,14 @@
+@import "variables";
+
+.radio-multi{
+	&.disabled{ cursor: not-allowed;
+		span{ color: @color_ccc; pointer-events: none;}
+		span.icon-radio{ background-position: 0 -200px;}
+	}
+	label{ margin-bottom:0;}
+	input[type="radio"]{ display:none;}
+	input[type="radio"]:checked + span.icon-radio{ background-position: 0 -70px;}
+	span{ font-size:13px; color:#666; font-weight:normal; line-height:18px; vertical-align:middle; cursor:pointer;}
+	span.icon-radio{ background-image: @brand-icon3; background-position: 0 -50px; background-repeat: no-repeat; background-size: 18px 350px; cursor: pointer; width: 15px; height: 15px; float: left; margin-right: 5px; margin-top: 2px;}
+	span.active{ background-position: 0 -70px;}
+}

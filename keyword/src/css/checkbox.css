@@ -1,0 +1,40 @@
+.checkbox-multi.disabled {
+  cursor: not-allowed;
+}
+.checkbox-multi.disabled label {
+  pointer-events: none;
+}
+.checkbox-multi.disabled span.icon-check {
+  background-position: 0 -275px;
+}
+.checkbox-multi label {
+  margin-bottom: 0;
+}
+.checkbox-multi input[type="checkbox"] {
+  display: none;
+}
+.checkbox-multi input[type="checkbox"]:checked + span.icon-check {
+  background-position: 0 -20px;
+}
+.checkbox-multi span {
+  font-size: 13px;
+  color: #666666;
+  font-weight: normal;
+  line-height: 18px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.checkbox-multi span.icon-check {
+  background-image: url(../images/icheck.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 18px 350px;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin-right: 8px;
+}
+.checkbox-multi span.active {
+  background-position: 0 -20px;
+}

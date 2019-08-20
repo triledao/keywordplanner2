@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebResourcesPaths">
+    <contentEntries>
+      <entry url="file://$PROJECT_DIR$">
+        <entryData>
+          <resourceRoots>
+            <path value="file://$PROJECT_DIR$/keyword/src" />
+            <path value="file://$PROJECT_DIR$/keyword/src/logo" />
+            <path value="file://$PROJECT_DIR$/keyword/src/fonts" />
+            <path value="file://$PROJECT_DIR$/keyword/src/css" />
+            <path value="file://$PROJECT_DIR$/keyword/src/logo/icon-channel" />
+            <path value="file://$PROJECT_DIR$/keyword/src/components" />
+          </resourceRoots>
+        </entryData>
+      </entry>
+    </contentEntries>
+  </component>
+</project>

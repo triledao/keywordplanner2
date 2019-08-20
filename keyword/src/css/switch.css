@@ -1,0 +1,81 @@
+.custom-switch {
+  position: relative;
+}
+.custom-switch.on-off input[type=checkbox]:checked + label:after {
+  content: "ON";
+}
+.custom-switch.on-off label {
+  width: 40px;
+}
+.custom-switch.on-off label:after {
+  content: "OFF";
+  font: bold 10px/14px "Roboto";
+}
+.custom-switch.disabled input[type=checkbox] + label {
+  background-color: #c5c5c5!important;
+}
+.custom-switch label {
+  background-color: #b0b0b0;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 25px;
+  height: 14px;
+  position: relative;
+  transition-duration: .5s;
+  margin: 0;
+  vertical-align: middle;
+}
+.custom-switch label:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-left: 10px;
+  color: #fff;
+  text-align: center;
+}
+.custom-switch label:before {
+  background-color: #fff;
+  border-radius: 50%;
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+.custom-switch input[type=checkbox] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  opacity: 0;
+  visibility: hidden;
+}
+.custom-switch input[type=checkbox]:checked + label {
+  background-color: #9cce24;
+}
+.custom-switch input[type=checkbox]:checked + label:before {
+  left: auto;
+  right: 2px;
+}
+.custom-switch input[type=checkbox]:checked + label:after {
+  content: "";
+  padding-left: 0;
+  padding-right: 10px;
+}
+.custom-switch .loading {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.custom-switch .loading .loading-icon {
+  background: url('../images/loading.gif') no-repeat;
+  width: 18px;
+  height: 18px;
+  background-size: 18px 18px;
+  margin-top: 1px;
+  margin-left: -2px;
+}

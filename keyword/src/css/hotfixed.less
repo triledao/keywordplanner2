@@ -1,0 +1,81 @@
+@import "variables";
+
+.mb-0{margin-bottom:0!important}.mt-0{margin-top:0!important}.mr-0{margin-right:0!important}.ml-0{margin-left:0!important}
+.mb-5{margin-bottom:5px!important}.mt-5{margin-top:5px!important}.mr-5{margin-right:5px!important}.ml-5{margin-left:5px!important}
+.mb-10{margin-bottom:10px!important}.mt-10{margin-top:10px!important}.mr-10{margin-right:10px!important}.ml-10{margin-left:10px!important}
+.mb-15{margin-bottom:15px!important}.mt-15{margin-top: 15px!important}.mr-15{margin-right:15px!important}.ml-15{margin-left:15px!important}
+.mb-20{margin-bottom:20px!important}.mt-20{margin-top:20px!important}.mr-20{margin-right:20px!important}.ml-20{margin-left:20px!important}
+.ml-25{margin-left:25px!important}.mr-25{margin-right:25px!important}.ml-30{margin-left:30px!important}.mr-30{margin-right:30px!important}
+
+.pl-0{padding-left:0!important}.pr-0{padding-right:0!important}.pt-0{padding-top:0!important}.pb-0{padding-bottom:0!important}
+.pl-5{padding-left:5px!important}.pr-5{padding-right:5px!important}.pt-5{padding-top:5px!important}.pb-5{padding-bottom:5px!important}
+.pl-10{padding-left:10px!important}.pr-10{padding-right:10px!important}.pt-10{padding-top:10px!important}.pb-10{padding-bottom:10px!important}
+.pl-15{padding-left:15px!important}.pr-15{padding-right:15px!important}.pt-15{padding-top:15px!important}.pb-15{padding-bottom:15px!important}
+.pl-20{padding-left:20px!important}.pr-20{padding-right:20px!important}.pt-20{padding-top:20px!important}.pb-20{padding-bottom:20px!important}
+.pl-25{padding-left:25px!important}.pr-25{padding-right:25px!important}.pl-30{padding-left:30px!important}.pr-30{padding-right:30px!important}
+
+.form-control[disabled], .form-control[readonly]{ background-color: @background_color_fff;}
+.form-control[readonly]{ color: @color_666;}
+
+.block-disabled{ opacity: 0.35; pointer-events: none; -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -webkit-backface-visibility: hidden; -ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: grayscale(100%); filter: gray;}
+
+.translate3d-top{ transform: translate3d(0px, 30px, 0px) !important;}
+
+.antalyser-popover-overlay{
+    &.active{ position: absolute; left: 0; right: 0; bottom: 0; top: 0; z-index: 1003;}
+}
+
+.no-data-basic{ background-color: #6c6c6c; color: transparent; font-size: 16px; text-align: center; text-shadow: 0px 0px 3px rgba(255,255,255,.5); -webkit-background-clip: text; -moz-background-clip: text; background-clip: text;}
+
+.box-shadow{ -webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.175)!important; box-shadow: 0 6px 12px rgba(0,0,0,0.175)!important;}
+
+.line-blue{ background-color: #dff2f8; width: 100%; height: 7px; border-top: 1px solid #b5deea;}
+
+.join-text{ height: 30px; line-height: 30px;}
+
+.word-break{ word-break: break-all !important; word-break: break-word!important;}
+
+//css scrollbar
+.not-macos ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    background-color: #eee;
+    width: 8px;
+    height: 8px;
+}
+
+.not-macos ::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,.2);
+    .border-radius(4px, 4px, 4px, 4px);
+}
+
+html, body{ height: 100%; width: 100%;}
+body{ color: @color_666; font-family:"Roboto"; font-size: 13px; line-height: normal; font-weight: normal; margin: 0; padding: 0;}
+
+ul{ margin: 0; padding: 0; list-style: none;}
+a{
+    &:hover, &:focus{ text-decoration: none;}
+}
+
+input[type=email], input[type=number], input[type=password], input[type=tel], input[type=text], input[type=url], textarea[type=text]{ background-color: @background_color_fff; border: 1px solid #13abd7; .border-radius(3px, 3px, 3px, 3px);
+    &:focus, &:active{ outline: none; box-shadow: none;}
+}
+input[type=email], input[type=number], input[type=password], input[type=tel], input[type=text], input[type=url]{ font-size: 12px; height: 30px; padding: 0 8px;}
+
+input[type=email]::-webkit-input-placeholder,
+input[type=number]::-webkit-input-placeholder,
+input[type=password]::-webkit-input-placeholder,
+input[type=tel]::-webkit-input-placeholder,
+input[type=text]::-webkit-input-placeholder,
+input[type=url]::-webkit-input-placeholder,
+textarea[type=text]::-webkit-input-placeholder{ color: @color_aaa;}
+
+input[type=email]::-moz-placeholder,
+input[type=number]::-moz-placeholder,
+input[type=password]::-moz-placeholder,
+input[type=tel]::-moz-placeholder,
+input[type=text]::-moz-placeholder,
+input[type=url]::-moz-placeholder,
+textarea[type=text]::-moz-placeholder{ color: @color_aaa;}
+
+textarea[type=text]{ font-size: 13px; padding: 5px 10px;}
+

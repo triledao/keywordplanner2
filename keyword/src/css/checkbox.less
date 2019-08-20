@@ -1,0 +1,14 @@
+@import "variables";
+
+.checkbox-multi{
+	&.disabled{ cursor: not-allowed;
+		label{ pointer-events: none;}
+		span.icon-check{ background-position: 0 -275px;}
+	}
+	label{ margin-bottom: 0;}
+	input[type="checkbox"]{ display: none;}
+	input[type="checkbox"]:checked + span.icon-check{ background-position: 0 -20px;}
+	span{ font-size: 13px; color: @color_666; font-weight: normal; line-height: 18px; vertical-align: middle; cursor:pointer;}
+	span.icon-check{ background-image: @brand-icon3; background-position: 0 0; background-repeat: no-repeat; background-size: 18px 350px; cursor: pointer; width: 18px; height: 18px; float: left; margin-right: 8px;}
+	span.active{ background-position: 0 -20px;}
+}

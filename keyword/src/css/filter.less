@@ -1,0 +1,100 @@
+@import "variables";
+
+//create filter
+.campaign-filter{ background-color: @background_color_fff; border: 2px solid #9cce24; .border-radius(5px, 5px, 5px, 5px); padding: 2px; margin-bottom: 10px; max-width: 1058px;
+	.btn-close{ 
+		&:hover{
+			.icon-close{ background-position: -30px -60px;}
+		}
+	}
+	
+	.top-filter{ background-color: @background_color_e8fabb; .border-radius(4px, 4px, 4px, 4px); padding: 12px 8px; line-height: 1;
+		.btn-close{ margin-left: 25px;}
+		.sub-title{ font-weight: 700; font-size: 14px; color: @color_666; display: inline-block; vertical-align: middle;
+			&:before{ background: url(../images/icon-template-report-only.png) 0 -270px no-repeat; background-size: 200px 330px; content: ""; cursor: pointer; display: inline-block; width: 16px; height: 16px; margin-right: 10px; vertical-align: middle; transform: rotate(180deg);}
+			&.active:before{ transform: rotate(0deg);}
+		}
+	}
+	
+	.content-filter{ padding: 18px 16px;
+		.wrap-row{ margin-bottom: 10px;}
+	}
+	
+	.bottom-filter{ align-items: flex-start; display: flex; justify-content: flex-start;
+		.group-button{ margin-right: 50px;}
+	}
+	
+	.inner-row{ align-items: center; display: flex; justify-content: flex-start; position: relative; padding-right: 260px;
+		.inner-col{ margin-right: 15px;
+			&.one{ width: 350px;}
+			&.two, &.three{ width: 160px;}
+		}
+		.btn-close{ position: absolute; right: 245px; top: 8px;}		
+	}
+	
+	.input-checkbox{
+		.checkbox-multi, .input-name{ display: inline-block; vertical-align: top;}
+		.checkbox-multi{ margin-top: 6px; margin-right: 15px; line-height: 1;}
+		.input-name, .input-name>input{ width: 200px;}
+	}
+	
+	.dropdown-menu{
+		.dropdown-item{ border-bottom: 1px solid #eee; max-width: 300px; overflow: hidden; text-overflow: ellipsis;
+			&:last-child{ border: 0;}
+		}
+		.scrollbar-dynamic{ max-height: 230px;}
+	}
+	
+	.btn-add{ color: #0b8eb3; cursor: pointer; margin-bottom: 10px;}
+	
+	.error-valid{ display: block; line-height: 1;
+		.icon-danger-valid{ margin-right: 8px; vertical-align: sub;}
+	}
+}
+
+.campaign-filter-v2{ border: 1px solid #00d500; .border-radius(3px, 3px, 3px, 3px); margin-bottom: 12px; max-width: 1058px; padding: 8px 125px 4px 34px; position: relative; min-height: 40px;
+	&.limit-height{ max-height: 66px; overflow: hidden;
+		&:after{ background-color: @background_color_fff; .border-radius(0px, 0px, 3px, 3px); content: ""; height: 5px; width: 100%; position: absolute; bottom: 0; left: 0;}
+	}
+	
+	.select-container{
+		.select-search{ background-color: @background_color_transparent; border: 0 none; color: @color_666; outline: none; font-size: 12px; height: 22px; width: 100%;}
+		
+		.select-match{
+			.item-filter{ background-color: @background_color_cdebf6; .border-radius(2px, 2px, 2px, 2px); color: @color_666; cursor: pointer; display: inline-block; padding: 0 27px 0 6px; font-size: 12px; margin-right: 5px; margin-bottom: 4px; white-space: nowrap; text-overflow: ellipsis; position: relative; overflow: hidden; min-height: 22px; line-height: 22px; max-width: 450px; vertical-align: top;
+				&:before, &:after{ display: table; content: "";}
+				&:after{ clear: both;}
+				a{ position: absolute; right: 2px; top: 2px; line-height: 1;}
+			}			
+		}
+		
+		.dropdown-sub-menu{
+			>.dropdown-menu{ padding: 0 0;				
+				li{ border-bottom: 1px solid #e5e5e5; padding: 5px 0;
+					&:last-child{ border: 0 none;}
+					>.dropdown-menu{ padding: 5px 0; margin-top: -1px;
+						li{ padding: 0 0;}
+					}					
+				}
+			}
+		}
+				
+		
+		input[type='search']::-webkit-input-placeholder{ color: @color_aaa;}
+		input[type='search']:-moz-placeholder{ color: @color_aaa;}
+	}
+	
+	.btn-save, .btn-close, .btn-pen, .collapse-filter{ position: absolute;}
+	.btn-save,.btn-close, .btn-pen{ top: 10px; line-height: 1;}
+	.btn-save, .btn-pen{ right: 44px;}
+	.btn-close{ right: 10px;}
+	
+	.collapse-filter{ color: #0b8eb3!important; cursor: pointer; bottom: 5px; right: 35px; line-height: 1;
+		&.active{
+			.icon-arrow-filter-v2{ transform: rotate(0deg);}
+		}
+		.icon-arrow-filter-v2{ transform: rotate(180deg); margin-left: 5px; vertical-align: text-bottom;}
+	}
+	
+	.icon-filter-v2{ width: 16px; height: 16px; font-size: 16px; position: absolute; top: 10px; left: 10px;}
+}

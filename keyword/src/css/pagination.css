@@ -1,0 +1,91 @@
+.pagination .page-item.active .page-link {
+  background-color: #13abd7;
+  border-color: #13abd7;
+}
+.pagination .page-item.active .page-link:hover {
+  color: #ffffff;
+}
+.pagination .page-item.disabled .page-link:after {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.pagination .page-item.first .page-link,
+.pagination .page-item.prev .page-link,
+.pagination .page-item.next .page-link,
+.pagination .page-item.last .page-link {
+  text-indent: -9999px;
+  position: relative;
+}
+.pagination .page-item.first .page-link:hover,
+.pagination .page-item.prev .page-link:hover,
+.pagination .page-item.next .page-link:hover,
+.pagination .page-item.last .page-link:hover {
+  background-color: #ffffff;
+  border-color: #13abd7;
+}
+.pagination .page-item.first .page-link:after,
+.pagination .page-item.prev .page-link:after,
+.pagination .page-item.next .page-link:after,
+.pagination .page-item.last .page-link:after {
+  background-image: url(../images/pagination.png);
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.pagination .page-item.first .page-link:hover:after,
+.pagination .page-item.last .page-link:hover:after {
+  background-position: -11px -60px;
+}
+.pagination .page-item.first .page-link:after,
+.pagination .page-item.last .page-link:after {
+  background-position: -11px -10px;
+  width: 9px;
+  height: 11px;
+}
+.pagination .page-item.prev .page-link:hover:after,
+.pagination .page-item.next .page-link:hover:after {
+  background-position: -61px -60px;
+}
+.pagination .page-item.prev .page-link:after,
+.pagination .page-item.next .page-link:after {
+  background-position: -61px -10px;
+  width: 6px;
+  height: 11px;
+  left: 11px;
+}
+.pagination .page-item.next .page-link:after,
+.pagination .page-item.last .page-link:after {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.pagination .page-item.next .page-link:after {
+  transform-origin: 4px center;
+}
+.pagination .page-item.last .page-link:after {
+  transform-origin: 5px center;
+}
+.pagination .page-link {
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -webkit-border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  color: #cccccc;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  padding: 8px 0;
+  margin: 0 2px;
+}
+.pagination .page-link:focus {
+  box-shadow: none;
+}
+.pagination .page-link:hover {
+  background-color: #ffffff;
+  border-color: #13abd7;
+  color: #13abd7;
+}

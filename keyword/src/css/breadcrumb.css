@@ -1,0 +1,90 @@
+.block-title {
+  padding-top: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+}
+.block-title.no-breadcrumb {
+  padding-top: 15px;
+}
+.block-title.no-breadcrumb .title {
+  font-size: 22px;
+}
+.block-title .title {
+  font-size: 20px;
+  margin: 0 0 6px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.block-title .title.title-v2 {
+  font-size: 18px;
+  padding-left: 25px;
+  position: relative;
+}
+.block-title .title.title-v2 .icon-campaign-grey {
+  background: url("../images/icon-template-report-only.png") no-repeat -100px -150px;
+  background-size: 200px 330px;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  top: 3px;
+}
+.block-title .title .text-small {
+  font-size: 13px;
+  font-weight: normal;
+}
+.block-title .title-create {
+  color: #333;
+  font-size: 18px;
+  margin-top: 8px;
+  padding-left: 25px;
+  position: relative;
+}
+.block-title .title-create:before {
+  border: 3px solid #14a6f4;
+  border-radius: 50%;
+  content: "";
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+.breadcrumb {
+  background: transparent;
+  padding: 0 15px 0 0;
+  margin-bottom: 0;
+  line-height: 1;
+}
+.breadcrumb a {
+  color: #0b83a6;
+  font-weight: bold;
+  font-size: 13px;
+}
+.breadcrumb li {
+  font-weight: bold;
+  font-size: 13px;
+  color: #0b83a6;
+}
+.breadcrumb li:hover a {
+  color: #13abd7;
+}
+.breadcrumb > li + li:before {
+  content: "";
+  background-image: url("../images/icon-template-report-only.png");
+  background-position: 0 -30px;
+  background-size: 200px 330px;
+  width: 6px;
+  height: 6px;
+  padding-right: 10px;
+  margin-left: 5px;
+  margin-top: 4px;
+  float: left;
+}
+.breadcrumb > li + li:before:hover {
+  color: #13abd7;
+}

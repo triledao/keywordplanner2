@@ -1,0 +1,11 @@
+@import "variables";
+
+//block color picker
+.block-color-picker{ width: 290px; margin: -2px; 
+	.color-item{ background-color: @background_color_e6e6e6; border: 1px solid rgba(0,0,0,0.3); cursor: pointer; width: 25px; height: 25px; float: left; margin: 2px 2px;
+		&.disabled{ cursor: default;
+			&:hover,&.active{ border-color: rgba(0,0,0,0.3); box-shadow: none; pointer-events: none;}
+		}
+		&:hover,&.active{ border: 1px solid #fff; box-shadow: 0px 1px 2px rgba(0,0,0,.7);}
+	}
+}

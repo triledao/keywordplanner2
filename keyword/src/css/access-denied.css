@@ -1,0 +1,24 @@
+.access-denied {
+  text-align: center;
+}
+.access-denied .block-image {
+  padding: 20px 0;
+}
+.access-denied .title {
+  font-size: 30px;
+  color: #ff7c00;
+  font-weight: bold;
+  line-height: 1;
+}
+.access-denied .info {
+  font-size: 14px;
+  font-weight: bold;
+  color: #666666;
+  margin-bottom: 20px;
+  line-height: 22px;
+}
+.access-denied .info > span {
+  display: block;
+  font-size: 13px;
+  font-weight: normal;
+}

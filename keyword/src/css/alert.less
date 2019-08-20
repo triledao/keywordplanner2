@@ -1,0 +1,12 @@
+@import "variables";
+
+.alert{ transition-duration: .3s;
+	&.alert-warning{ background-color: @background_color_ff7b00; .border-radius(0px, 0px, 0px, 0px); margin: 0 0 -55px; padding: 55px 20px 0 255px; min-height: 44px;
+		.title{ color: @color_fff; font-size: 13px; font-weight: bold; margin: 0; line-height: 44px;
+			>a{ color: @color_fff; font-size: 20px; font-weight: bold; margin-left: 5px; text-decoration: underline;}
+		}
+		
+		.icon-warning{ margin-right: 15px; vertical-align: text-bottom;}
+	}
+}
+
